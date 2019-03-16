@@ -1,0 +1,19 @@
+@function get-font-style($style) {
+  $met-sans-light: '../fonts/met-sans/TheMetSans-Light.woff2';
+  $met-sans-medium: '../fonts/met-sans/TheMetSans-Medium.woff2';
+  $met-sans-semibold: '../fonts/met-sans/TheMetSans-Semibold.woff2';
+  $met-sans-regular: '../fonts/met-sans/TheMetSans-Regular.woff2';
+
+  @if $style == 'light' {
+    @return url($met-sans-light);
+  }
+  @else if $style == 'medium' {
+    @return url($met-sans-medium);
+  }
+  @else if $style == 'semibold' {
+    @return url($met-sans-semibold);
+  }
+  @else {
+    @return url($met-sans-regular);
+  }
+}

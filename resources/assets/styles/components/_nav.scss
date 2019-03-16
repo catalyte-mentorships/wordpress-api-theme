@@ -1,0 +1,84 @@
+.nav {
+  background: $common-red;
+  margin: 0 auto;
+  max-width: 75rem;
+  width: 100%;
+  //height: 3.75rem;
+  display: flex;
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: $met-sans-semibold, $base-fonts;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:visited {
+      text-decoration: none;
+    }
+
+    &:active {
+      text-decoration: none;
+    }
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  &__controls {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .buy-tickets {
+      margin: 1rem;
+      font-size: 2rem;
+    }
+  }
+
+  &__logo {
+    padding: 1rem;
+
+    &-svg {
+      display: inline-block;
+      text-indent: -9999px;
+      width: 4rem;
+      height: 4rem;
+      background: url(../images/svg/nav__logo-small.svg);
+      background-size: 4rem 4rem;
+    }
+  }
+
+  .search {
+    margin: 1rem;
+
+    .icon::before {
+      font-family: 'Font Awesome 5 Free', Arial, sans-serif;
+      font-weight: 400;
+      font-size: 2rem;
+      display: block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      content: "\f002";
+      color: #ffffff;
+    }
+  }
+
+  .menu-toggle {
+    font-size: 2.5rem;
+    padding: 1rem;
+  }
+
+  &__menu {
+    .menu-close {
+      font-size: 2.5rem;
+      padding: 1rem;
+    }
+  }
+}

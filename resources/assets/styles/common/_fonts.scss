@@ -1,0 +1,20 @@
+// Fonts
+$regular: 'Regular';
+$semibold: 'Semibold';
+
+$base-fonts: Arial, Helvetica, sans-serif;
+$base-font-family: 'MetSans, ' + $base-fonts;
+$met-sans-regular: 'MetSans-' + $regular;
+$met-sans-semibold: 'MetSans-' + $semibold;
+
+@font-face {
+  font-family: $met-sans-regular;
+  src: get-font-style('') format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: $met-sans-semibold;
+  src: get-font-style('semibold') format('woff2');
+  font-weight: 500;
+}
