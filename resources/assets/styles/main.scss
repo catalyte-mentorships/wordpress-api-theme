@@ -11,11 +11,13 @@
  */
 // @import '~some-node-module';
 @import '~@fortawesome/fontawesome-free/scss/solid';
+//@import '~@fortawesome/fontawesome-free/scss/regular';
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
 
 /** Import theme styles */
 @import 'common/global';
 @import 'common/reset';
+@import 'common/mixins';
 @import 'common/functions';
 @import 'common/fonts';
 @import 'components/nav';
