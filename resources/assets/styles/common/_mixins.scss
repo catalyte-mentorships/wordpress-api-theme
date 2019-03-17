@@ -1,0 +1,19 @@
+@mixin nav-link-text() {
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: $met-sans-semibold, $base-fonts;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:visited {
+      text-decoration: none;
+    }
+
+    &:active {
+      text-decoration: none;
+    }
+  }
+}
