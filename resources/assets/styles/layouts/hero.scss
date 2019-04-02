@@ -1,0 +1,11 @@
+.hero {
+  height: 70vh;
+  //background-image: url(../images/hero/03_17_2019_hero_v1.jpg);
+  //background-size: cover;
+  //background-position: 50% 50%;
+
+  &__heading {
+    font-family: $met-sans-regular;
+    font-weight: 300;
+  }
+}
