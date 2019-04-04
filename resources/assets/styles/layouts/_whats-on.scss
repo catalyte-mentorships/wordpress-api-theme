@@ -1,0 +1,14 @@
+.whats-on {
+  margin: 3rem 0 auto;
+
+  &__title {
+    font-family: $met-sans-semibold, $default-font-stack;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0 0 1rem 2rem;
+  }
+
+  &__sub-title {
+    display: none;
+  }
+}

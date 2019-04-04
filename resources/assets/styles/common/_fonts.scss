@@ -11,6 +11,8 @@ $met-sans-medium: 'MetSans-' + $medium;
 $met-sans-light: 'MetSans-' + $light;
 $met-sans-semibold: 'MetSans-' + $semibold;
 
+$default-font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 @font-face {
   font-family: $met-sans-regular;
   src: get-font-style('') format('woff2');

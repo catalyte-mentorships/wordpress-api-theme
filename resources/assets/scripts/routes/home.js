@@ -1,9 +1,14 @@
 import locationString from '../util/location';
+import Flickity from 'flickity';
 
 export default {
   init() {
-    // JavaScript to be fired on the home page
-    // https://players.brightcove.net/911432378001/default_default/index.html?videoId=5992547911001
+    const slider = window.document.getElementById('slider');
+    new Flickity(slider, {
+      freeScroll: true,
+      wrapAround: true,
+      imagesLoaded: true,
+    });
   },
   finalize() {
     // DOM elements
