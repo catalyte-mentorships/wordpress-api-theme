@@ -46,8 +46,12 @@
       width: 40%;
     }
 
-    @include media-queries('desktop') {
+    @include media-queries('laptop') {
       width: 30%;
+    }
+
+    @include media-queries('desktop') {
+      width: 20%;
     }
   }
 }

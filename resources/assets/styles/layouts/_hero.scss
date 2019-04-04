@@ -29,7 +29,12 @@
       width: 55%;
     }
 
-    @include media-queries('desktop') {
+    @include media-queries('laptop') {
+      font-size: 7rem;
+      width: 45%;
+    }
+
+    @include media-queries('dekstop') {
       font-size: 6rem;
       width: 55%;
     }
@@ -40,7 +45,7 @@
     background-position: 50% 85%;
   }
 
-  @include media-queries('desktop') {
+  @include media-queries('laptop') {
     background: transparent;
 
     &__video {
