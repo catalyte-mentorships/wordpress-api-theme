@@ -8,7 +8,7 @@
         <a href="https://rsecure.metmuseum.org/admissions/tickets" target="_blank" class="buy-tickets">Buy Tickets</a>
         <div class="search">
           <a href="#">
-            <span class="icon"></span>
+            <span class="icon fas fa-search"></span>
           </a>
         </div>
 

@@ -10,9 +10,6 @@
  * @see https://github.com/webpack-contrib/sass-loader#imports
  */
 // @import '~some-node-module';
-@import '~@fortawesome/fontawesome-free/scss/solid';
-//@import '~@fortawesome/fontawesome-free/scss/regular';
-@import '~@fortawesome/fontawesome-free/scss/fontawesome';
 
 /** Import theme styles */
 @import 'common/global';

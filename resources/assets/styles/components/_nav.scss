@@ -39,6 +39,7 @@
 
   .search {
     margin: 1rem;
+    font-size: 1.5rem;
 
     .icon::before {
       font-family: 'Font Awesome 5 Free', Arial, sans-serif;
@@ -49,7 +50,6 @@
       font-variant: normal;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
-      content: "\f002";
       color: #ffffff;
     }
   }
