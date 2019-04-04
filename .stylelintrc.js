@@ -6,6 +6,7 @@ module.exports = {
     'color-hex-length': null,
     'at-rule-empty-line-before': null,
     'number-leading-zero': null,
+    'no-eol-whitespace': null,
     'at-rule-no-unknown': [
       true,
       {

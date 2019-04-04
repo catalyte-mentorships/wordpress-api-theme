@@ -1,10 +1,14 @@
 // Fonts
 $regular: 'Regular';
 $semibold: 'Semibold';
+$light: 'Light';
+$medium: 'Medium';
 
 $base-fonts: Arial, Helvetica, sans-serif;
 $base-font-family: 'MetSans, ' + $base-fonts;
 $met-sans-regular: 'MetSans-' + $regular;
+$met-sans-medium: 'MetSans-' + $medium;
+$met-sans-light: 'MetSans-' + $light;
 $met-sans-semibold: 'MetSans-' + $semibold;
 
 @font-face {
@@ -14,7 +18,19 @@ $met-sans-semibold: 'MetSans-' + $semibold;
 }
 
 @font-face {
+  font-family: $met-sans-medium;
+  src: get-font-style('medium') format('woff2');
+  font-weight: 500;
+}
+
+@font-face {
   font-family: $met-sans-semibold;
   src: get-font-style('semibold') format('woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: $met-sans-light;
+  src: get-font-style('light') format('woff2');
   font-weight: 500;
 }
