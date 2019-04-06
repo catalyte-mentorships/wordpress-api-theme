@@ -5,7 +5,10 @@ deploy_stage:
   environment: Staging
   only:
     - master
-
+  script:
+    - rm ./package-lock.json
+    - npm install
+    
 before_script:
   - apt-get update
   - apt-get install zip unzip
