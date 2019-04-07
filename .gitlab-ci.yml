@@ -1,19 +1,19 @@
 image: tetraweb/php
 
-deploy_stage:
+deploy_production:
   stage: deploy
-  environment: Staging
+  environment: Production
   only:
     - master
   script:
     - rm ./package-lock.json
     - npm install
-    
+    - npm run build:production
+    - php composer.phar install
+
 before_script:
   - apt-get update
   - apt-get install zip unzip
   - php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
   - php composer-setup.php
   - php -r "unlink('composer-setup.php');"
-  - php composer.phar install
-  - npm install
