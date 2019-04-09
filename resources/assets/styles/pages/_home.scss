@@ -1,5 +1,8 @@
 .home-wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
+  //display: grid;
+  //grid-template-columns: 1fr;
+  //grid-template-rows: auto;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
 }

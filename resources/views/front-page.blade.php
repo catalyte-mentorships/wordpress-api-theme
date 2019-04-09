@@ -17,18 +17,20 @@
 			</section>
 			@include('partials.content-page')
 			@endwhile
+			<div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, eaque enim eveniet, exercitationem incidunt
+					iste minus nesciunt pariatur perspiciatis possimus quaerat quos similique ut? Alias distinctio doloremque dolores
+					natus pariatur!</p>
+				<p>Ab beatae distinctio doloremque eligendi error, est eveniet magnam magni minima natus nobis quam sapiente,
+					tempore ut voluptate? Dolorem est eum id molestias necessitatibus nobis numquam quos repellendus sit totam?</p>
+				<p>Adipisci aliquam fugiat natus odio odit placeat, quaerat sapiente sunt suscipit voluptatibus. Accusantium aliquam
+					cumque, deserunt doloribus ex fuga ipsa iusto minima necessitatibus odio, reprehenderit rerum sed suscipit totam
+					unde.</p>
+				<p>Ad alias cupiditate, dignissimos dolorem dolores dolorum eos in ipsum nihil numquam obcaecati optio quibusdam
+					quis reprehenderit veniam. Animi dolorum eius in ipsum maxime nihil, repellat repellendus tempore voluptates
+					voluptatum.</p>
+			</div>
 		</div>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, eaque enim eveniet, exercitationem incidunt
-			iste minus nesciunt pariatur perspiciatis possimus quaerat quos similique ut? Alias distinctio doloremque dolores
-			natus pariatur!</p>
-		<p>Ab beatae distinctio doloremque eligendi error, est eveniet magnam magni minima natus nobis quam sapiente,
-			tempore ut voluptate? Dolorem est eum id molestias necessitatibus nobis numquam quos repellendus sit totam?</p>
-		<p>Adipisci aliquam fugiat natus odio odit placeat, quaerat sapiente sunt suscipit voluptatibus. Accusantium aliquam
-			cumque, deserunt doloribus ex fuga ipsa iusto minima necessitatibus odio, reprehenderit rerum sed suscipit totam
-			unde.</p>
-		<p>Ad alias cupiditate, dignissimos dolorem dolores dolorum eos in ipsum nihil numquam obcaecati optio quibusdam
-			quis reprehenderit veniam. Animi dolorum eius in ipsum maxime nihil, repellat repellendus tempore voluptates
-			voluptatum.</p>
 	</section>
 @endsection
 

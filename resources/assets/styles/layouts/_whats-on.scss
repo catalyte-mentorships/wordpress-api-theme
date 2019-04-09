@@ -1,5 +1,5 @@
 .whats-on {
-  margin: 3rem 0 auto;
+  margin: 3rem 0 5rem;
 
   &__title {
     font-family: $met-sans-semibold, $default-font-stack;
@@ -9,6 +9,18 @@
   }
 
   &__sub-title {
+    font-family: $met-sans-light, $default-font-stack;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0 0 1rem 2rem;
     display: none;
+
+    @include media-queries('tablet') {
+      display: block;
+    }
+
+    @include media-queries('laptop') {
+      display: block;
+    }
   }
 }

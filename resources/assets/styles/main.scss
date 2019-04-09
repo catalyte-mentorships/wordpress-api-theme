@@ -10,7 +10,12 @@
  * @see https://github.com/webpack-contrib/sass-loader#imports
  */
 // @import '~some-node-module';
-//@import '~flickity/dist/flickity.min.css';
+
+// Required Core Stylesheet
+@import "~@glidejs/glide/src/assets/sass/glide.core";
+
+// Optional Theme Stylesheet
+@import "~@glidejs/glide/src/assets/sass/glide.theme";
 
 /** Import theme styles */
 @import 'common/global';
