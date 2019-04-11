@@ -1,4 +1,4 @@
-import location from '../location';
+// import location from '../location';
 
 /**
  * @author Keith Murphy | nomadmystics@gmail.com
@@ -6,6 +6,6 @@ import location from '../location';
  */
 export default {
   getPostEndpoint: (post_type = 'post') => {
-    return `${location.getHost()}/wp-json/wp/v2/${post_type}`;
+    return `/wp-json/wp/v2/${post_type}/?_embed`;
   },
 };
