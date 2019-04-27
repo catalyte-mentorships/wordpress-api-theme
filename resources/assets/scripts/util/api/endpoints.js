@@ -5,7 +5,10 @@
  * @description Build out all of the endpoints needed to gather API data from endpoints
  */
 export default {
-  getPostEndpoint: (post_type = 'post') => {
-    return `/wp-json/wp/v2/${post_type}/?_embed`;
+  getPostEndpoint: (postType = 'post') => {
+    return `/wp-json/wp/v2/${postType}/?_embed`;
+  },
+  getPostByCategoryEndpoint: (category) => {
+    return `/wp-json/wp/v2/posts/?categories=${category}&_embed`;
   },
 };

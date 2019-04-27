@@ -4,7 +4,7 @@ import Glide from '@glidejs/glide'
 import locations from '../util/location';
 import endpoints from '../util/api/endpoints';
 import buildSlides from '../components/buildSlides';
-
+import buildMainContent from '../components/buildMainContent';
 /**
  * @author Keith Murphy | nomadmystics@gmail.com
  */
@@ -17,6 +17,7 @@ export default {
     // DOM elements
     const heroVideo = window.document.getElementById('hero__video');
     const whatsOnGlider = window.document.getElementById('js-whats-on-glider');
+    const mainContent = window.document.getElementById('js-main-content');
     const videoSrc = `http://${locations.getHost()}/app/uploads/2019/04/hero_video.mp4`;
 
     /**
@@ -50,14 +51,13 @@ export default {
     };
     playVideo();
 
-    // @todo Change to a function
+    // Build the whats on slider
+    // @todo Change to an imported module
     fetch(`${endpoints.getPostEndpoint('whats_on')}`)
       .then(results => {
-        console.log(results);
         return results.json();
       })
       .then(posts => {
-        console.log(posts);
         return buildSlides(posts);
       })
       .then(slides => {
@@ -65,9 +65,25 @@ export default {
         createGlider();
       })
       .catch(err => console.error(err));
+
+      // Build main content
+      // @todo Change to an imported module
+      fetch(`${endpoints.getPostByCategoryEndpoint('2')}`)
+        .then(results => {
+          return results.json();
+        })
+        .then(posts => {
+          console.log(posts);
+          return buildMainContent(posts);
+        })
+        .then(cards => {
+          mainContent.innerHTML = cards;
+        })
+        .catch(err => console.error(err));
   },
 };
 
+// @todo Change to an imported module
 const createGlider = () => {
   new Glide('.glide', {
     type: 'carousel',

@@ -1,0 +1,45 @@
+.main-content {
+  &__card {
+    width: 90vw;
+    margin: 0 auto;
+
+    .img-container {
+      img {
+
+        @include responsive-img();
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: rgba(147, 147, 147, 0.05);
+      padding: 4rem 6rem;
+      text-align: center;
+
+      h4 {
+        font-family: $met-sans-light, $default-font-stack;
+        font-size: 2.5rem;
+        font-weight: 400;
+      }
+
+      p {
+        font-family: $met-sans-light, $default-font-stack;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.5;
+        margin: 1.5rem auto;
+      }
+
+      a {
+        font-family: $met-sans-medium, $default-font-stack;
+        font-weight: 500;
+        font-size: 1.5rem;
+        color: #000000;
+        margin: 2rem auto;
+      }
+    }
+  }
+}

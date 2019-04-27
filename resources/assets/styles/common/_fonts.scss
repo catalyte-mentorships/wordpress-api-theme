@@ -34,5 +34,5 @@ $default-font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-face {
   font-family: $met-sans-light;
   src: get-font-style('light') format('woff2');
-  font-weight: 500;
+  font-weight: 400;
 }
