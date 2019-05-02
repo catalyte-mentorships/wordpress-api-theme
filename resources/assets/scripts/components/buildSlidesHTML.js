@@ -11,10 +11,12 @@ const buildSlidesHTML = (posts) => {
             <img src="${post._embedded['wp:featuredmedia'][0].source_url}" alt="">
           </figure>
           <div class="glide__content">
-            <a href="${post.link}">
-              <h3 class="title">${removeHTML(post.title.rendered)}</h3>
-            </a>
+            <section>
+              <a href="${post.link}">
+                <h3 class="title">${removeHTML(post.title.rendered)}</h3>
+              </a>
               <h5 class="sub-title">${removeHTML(post.excerpt.rendered)}</h5>
+            </section>
           </div>
         </li>
        `;

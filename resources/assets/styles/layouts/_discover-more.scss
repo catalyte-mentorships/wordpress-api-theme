@@ -25,6 +25,10 @@
     }
   }
 
+  .glide__slide {
+    position: relative;
+  }
+
   .glide__content {
     position: absolute;
     bottom: 5rem;
@@ -38,6 +42,12 @@
     .sub-title {
       font-size: 1rem;
       color: white;
+
+      @include media-queries('laptop') {
+        font-size: 2rem;
+        padding: 2rem 0;
+        margin: 0 0 0 2rem;
+      }
     }
   }
 }
