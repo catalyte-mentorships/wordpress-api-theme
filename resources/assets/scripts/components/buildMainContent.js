@@ -1,5 +1,4 @@
 import removeHTML from '../util/strings/removeHTML';
-// import endpoints from '../util/api/endpoints';
 
 /**
  * @author Keith Murphy | nomadmystics@gmail.com

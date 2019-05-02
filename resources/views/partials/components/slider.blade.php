@@ -1,7 +1,7 @@
 <section>
-  <div class="glide">
+  <div class="glide glide-{{ $type }} {{ $type }}">
     <div class="glide__track" data-glide-el="track">
-      <ul class="glide__slides" id="js-whats-on-glider">
+      <ul class="glide__slides" id="js-{{ $type }}-glider">
         // Created by Wordpress API
       </ul>
     </div>

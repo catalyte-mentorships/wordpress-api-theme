@@ -1,33 +1,28 @@
+import buildSlidesHTML from './buildSlidesHTML';
+import endpoints from '../util/api/endpoints';
+import createGlider from './glider';
 
-const buildSlides = (posts) => {
-  return new Promise((res, rej) => {
-    let slides = '';
+/**
+ * @author Keith Murphy | nomadmystics@gmail.com
+ * @param {string} type
+ * @param el
+ */
+const buildSlides = (type, el) => {
+  console.log(type);
+  console.log(el);
 
-    posts.forEach((post) => {
-      slides += `
-        <li class="glide__slide">
-          <figure>           
-            <img src="${post._embedded['wp:featuredmedia'][0].source_url}" alt="">
-          </figure>
-          <div class="glide__content">
-            <a href="${post.link}">
-              <h3 class="title">${post.title.rendered}</h3>
-            </a>
-              <h5 class="sub-title">${post.excerpt.rendered}</h5>
-          </div>
-        </li>
-       `;
-    });
-
-    if (slides) {
-      res(slides);
-    }
-
-    // @todo This is not good error handling!!!
-    if (!slides) {
-      rej('There was an error in the creation of the slides');
-    }
-  });
+  fetch(`${endpoints.getPostEndpoint(type)}`)
+    .then(results => {
+      return results.json();
+    })
+    .then(posts => {
+      return buildSlidesHTML(posts);
+    })
+    .then(slides => {
+      el.innerHTML = slides;
+      createGlider(type);
+    })
+    .catch(err => console.error(err));
 };
 
 export default buildSlides;
