@@ -1,9 +1,50 @@
 .main-content {
-  &__card {
+  width: 90vw;
+  margin: 0 auto;
+  overflow: hidden;
+
+  @include media-queries('tablet') {
     width: 90vw;
+  }
+
+  @include media-queries('laptop') {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-auto-columns: auto;
+    justify-content: center;
+    max-width: 1224px;
+  }
+
+  @include media-queries('desktop') {
+    max-width: 1440px;
+  }
+
+  &__card {
+    width: 100%;
     margin: 0 auto;
 
+    @include media-queries('laptop') {
+      //width: ;
+      display: flex;
+      margin: 1rem auto;
+      justify-content: center;
+
+      &:nth-child(2) > div:nth-child(1) {
+        order: 2;
+      }
+
+      &:nth-child(4) > div:nth-child(1) {
+        order: 2;
+      }
+    }
+
     .img-container {
+      background: rgba(147, 147, 147, 0.05);
+
+      @include media-queries('laptop') {
+        width: 50%;
+      }
+
       img {
 
         @include responsive-img();
@@ -19,10 +60,18 @@
       padding: 4rem 6rem;
       text-align: center;
 
+      @include media-queries('laptop') {
+        width: 50%;
+      }
+
       h4 {
         font-family: $met-sans-light, $default-font-stack;
         font-size: 2.5rem;
         font-weight: 400;
+
+        @include media-queries('desktop') {
+          font-size: 3.5rem;
+        }
       }
 
       p {
