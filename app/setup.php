@@ -130,3 +130,21 @@ add_action('after_setup_theme', function () {
         return "<?= " . __NAMESPACE__ . "\\asset_path({$asset}); ?>";
     });
 });
+
+
+add_action( 'rest_api_init', function() {
+    register_rest_field(
+        'post',
+        'custom_fields', //New Field Name in JSON RESPONSEs
+        array(
+            'get_callback'    => function ( $object, $field_name, $request ) {
+                $post_id = $object['id'];
+                $post_custom_fields = get_post_meta($post_id);
+
+                return $post_custom_fields;
+            },
+            'update_callback' => null,
+            'schema'          => null,
+        )
+    );
+});

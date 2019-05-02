@@ -69,8 +69,12 @@
         font-size: 2.5rem;
         font-weight: 400;
 
-        @include media-queries('desktop') {
+        @include media-queries('laptop') {
           font-size: 3.5rem;
+        }
+
+        @include media-queries('desktop') {
+          font-size: 4rem;
         }
       }
 
@@ -87,8 +91,33 @@
         font-weight: 500;
         font-size: 1.5rem;
         color: #000000;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
         margin: 2rem auto;
+
+        &::after {
+          content: '';
+          display: block;
+          width: 100%;
+          height: auto;
+          border-bottom: solid 1px black;
+        }
+
+        &:hover::after {
+          animation: link-grow-bottom-border .5s 0s linear;
+        }
       }
     }
+  }
+}
+
+@keyframes link-grow-bottom-border {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
   }
 }
