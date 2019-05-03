@@ -1,4 +1,5 @@
 <section>
+  <div class="spinner spinner-{{ $type }}"></div>
   <div class="glide glide-{{ $type }} {{ $type }}">
     <div class="glide__track" data-glide-el="track">
       <ul class="glide__slides" id="js-{{ $type }}-glider">

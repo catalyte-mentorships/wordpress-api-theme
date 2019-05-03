@@ -1,0 +1,24 @@
+.spinner {
+  width: 10rem;
+  height: 10rem;
+  border: solid 3px transparent;
+  border-right: solid 3px gray;
+  border-radius: 50%;
+  margin: 0 auto;
+
+  &.spinner-whats-on,
+  &.spinner-discover-more {
+    animation: rotateSpinner 1s linear infinite;
+    animation-play-state: paused;
+  }
+}
+
+@keyframes rotateSpinner {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
