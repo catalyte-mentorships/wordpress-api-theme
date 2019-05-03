@@ -1,9 +1,15 @@
 import removeHTML from '../util/strings/removeHTML';
 
+/**
+ * @author Keith Murphy | nomadmystics@gmail.com
+ * @param {array} posts
+ * @returns {Promise<any>}
+ */
 const buildSlidesHTML = (posts) => {
   return new Promise((res, rej) => {
     let slides = '';
 
+    // Create each slide by which post was given
     posts.forEach((post) => {
       slides += `
         <li class="glide__slide">

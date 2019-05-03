@@ -1,11 +1,12 @@
 // Dom Elements
+// @todo Optimize this by not having it loaded each time the module is called
 const whatsOnSpinner = window.document.querySelector('.spinner-whats-on');
 const discoverMoreSpinner = window.document.querySelector('.spinner-discover-more');
 
 /**
  * @author Keith Murphy | nomadmystics@gmail.com
  * @param {string} mode
- * @param {html5} el
+ * @param {HTMLElement} el
  */
 const spinner = (mode, el) => {
   if ('on' === mode) {

@@ -6,10 +6,10 @@ import spinner from './spinner';
 /**
  * @author Keith Murphy | nomadmystics@gmail.com
  * @param {string} type
- * @param el
+ * @param {HTMLElement} el
  */
 const buildSlides = (type, el) => {
-
+  // Turn the sinner on
   spinner('on', el);
 
   fetch(`${endpoints.getPostEndpoint(type)}`)
