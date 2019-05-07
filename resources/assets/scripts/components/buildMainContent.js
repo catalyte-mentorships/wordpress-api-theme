@@ -1,46 +1,30 @@
-import removeHTML from '../util/strings/removeHTML';
+import endpoints from '../util/api/endpoints';
+import spinner from './spinner';
+import buildMainContentHTML from './buildMainContentHTML';
 
 /**
  * @author Keith Murphy | nomadmystics@gmail.com
- * @param posts
- * @returns {Promise<any>}
+ * @param {HTMLElement} el
  */
-const buildMainContent = (posts) => {
-  return new Promise((res, rej) => {
-    let slides = '';
-    const postReversed = posts.reverse();
+const buildMainContent = (el) => {
+  // Turn the sinner on
+  spinner('on', el);
 
-    postReversed.forEach((post) => {
-      // fetch(`${endpoints.getPostMetaData(post.id)}`)
-      //   .then(results => {
-      //     console.log(results);
-      //   });
-
-      slides += `
-        <div class="main-content__card">
-          <div class="img-container">
-            <a href="${post.custom_fields['external-link']}" target="_blank">
-              <img src="${post._embedded['wp:featuredmedia'][0].source_url}" alt="" class="img">
-            </a>
-          </div>
-          <div class="content">
-            <h4>${post.title.rendered}</h4>
-            <p>${removeHTML(post.content.rendered)}</p>
-            <a href="${post.custom_fields['external-link']}" target="_blank">${removeHTML(post.excerpt.rendered)}</a>
-          </div>
-        </div>
-      `;
-    });
-
-    if (slides) {
-      res(slides);
-    }
-
-    // @todo This is not good error handling!!!
-    if (!slides) {
-      rej('There was an error in the creation of the slides');
-    }
-  });
+  fetch(`${endpoints.getPostByCategoryEndpoint('2')}`)
+    .then(results => {
+      return results.json();
+    })
+    .then(posts => {
+      console.log(posts);
+      return buildMainContentHTML(posts);
+    })
+    .then(cards => {
+      el.innerHTML = cards;
+      // Turn the sinner off
+      spinner('off', el);
+    })
+    .catch(err => console.error(err));
 };
 
 export default buildMainContent;
+

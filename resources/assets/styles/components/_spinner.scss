@@ -7,7 +7,8 @@
   margin: 0 auto;
 
   &.spinner-whats-on,
-  &.spinner-discover-more {
+  &.spinner-discover-more,
+  &.spinner-main-content {
     animation: rotateSpinner 1s linear infinite;
     animation-play-state: paused;
   }

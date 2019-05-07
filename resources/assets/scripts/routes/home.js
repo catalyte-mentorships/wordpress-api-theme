@@ -1,8 +1,7 @@
 // My modules
 import locations from '../util/location';
-import endpoints from '../util/api/endpoints';
-import buildMainContent from '../components/buildMainContent';
 import buildSlides from '../components/buildSlides';
+import buildMainContent from '../components/buildMainContent';
 
 /**
  * @author Keith Murphy | nomadmystics@gmail.com
@@ -56,18 +55,6 @@ export default {
     buildSlides('discover_more', discoverMoreGlider);
 
     // Build main content
-    // @todo Change to an imported module
-    fetch(`${endpoints.getPostByCategoryEndpoint('2')}`)
-      .then(results => {
-        return results.json();
-      })
-      .then(posts => {
-        console.log(posts);
-        return buildMainContent(posts);
-      })
-      .then(cards => {
-        mainContent.innerHTML = cards;
-      })
-      .catch(err => console.error(err));
+    buildMainContent(mainContent);
   },
 };
