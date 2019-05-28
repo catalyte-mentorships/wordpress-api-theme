@@ -19,16 +19,16 @@
     <section>
       <div class="footer__nav" role="navigation">
         <h3>
-          <a href="" target="_blank">About the Met</a>
+          <a href="https://www.metmuseum.org/about-the-met" target="_blank">About the Met</a>
         </h3>
         <h3>
-          <a href="" target="_blank">Blogs</a>
+          <a href="https://www.metmuseum.org/blogs" target="_blank">Blogs</a>
         </h3>
         <h3>
-          <a href="" target="_blank">Videos</a>
+          <a href="https://www.metmuseum.org/metmedia" target="_blank">Videos</a>
         </h3>
         <h3>
-          <a href="" target="_blank">About the Met</a>
+          <a href="https://www.metmuseum.org/press" target="_blank">Press</a>
         </h3>
       </div>
     </section>
