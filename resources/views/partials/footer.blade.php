@@ -83,5 +83,22 @@
         @include('partials.components.social-media')
       </div>
     </section>
+    <section>
+      <div class="footer__font-notes">
+        <h3 class="title">
+          <a class="link" href="" target="_blank">Site Index</a>
+        </h3>
+        <h3 class="title">
+          <a class="link" href="" target="_blank">Terms and Conditions</a>
+        </h3>
+        <h3 class="title">
+          <a class="link" href="" target="_blank">Privacy Policy</a>
+        </h3>
+        <h3 class="title">
+          <a class="link" href="" target="_blank">Contact Information</a>
+        </h3>
+        <p class="copyright">© 2000–2019 The Metropolitan Museum of Art. All rights reserved.</p>
+      </div>
+    </section>
   </div>
 </footer>
