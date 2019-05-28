@@ -32,5 +32,39 @@
         </h3>
       </div>
     </section>
+    <section>
+      <div class="footer__addresses">
+        <div class="address address1">
+          <h4><a href="https://www.metmuseum.org/visit/plan-your-visit/met-fifth-avenue" target="_blank">The Met Fifth Avenue</a></h4>
+          <address>
+            <ul>
+              <li>1000 Fifth Avenue</li>
+              <li>New York, NY 10028</li>
+              <li><a href="tel:+2125357710">Phone: 212-535-7710</a></li>
+            </ul>
+          </address>
+        </div>
+        <div class="address address2">
+          <h4><a href="https://www.metmuseum.org/visit/plan-your-visit/met-breuer" target="_blank">The Met Breuer</a></h4>
+          <address>
+            <ul>
+              <li>945 Madison Ave</li>
+              <li>at 75th Street</li>
+              <li><a href="tel:+2127311675">Phone: 212-731-1675</a></li>
+            </ul>
+          </address>
+        </div>
+        <div class="address address3">
+          <h4><a href="https://www.metmuseum.org/visit/plan-your-visit/met-cloisters" target="_blank">The Met Cloisters </a></h4>
+          <address>
+            <ul>
+              <li>99 Margaret Corbin Drive</li>
+              <li>New York, NY 10040</li>
+              <li><a href="tel:+2129233700">Phone: 212-923-3700</a></li>
+            </ul>
+          </address>
+        </div>
+      </div>
+    </section>
   </div>
 </footer>

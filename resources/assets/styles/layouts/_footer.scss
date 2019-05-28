@@ -36,7 +36,7 @@
   }
 
   &__nav {
-    margin: 6rem auto;
+    margin: 6rem auto 0;
     padding: 0 1.5rem;
 
     h3 {
@@ -55,6 +55,44 @@
 
     h3:last-child {
       border-bottom: 1px solid rgba(0, 0, 0, .5);
+      padding: 1rem 1rem 4rem 0;
+    }
+  }
+
+  &__addresses {
+    margin: 4rem auto 0;
+    padding: 0 1.5rem;
+
+    h4 {
+      font-family: $met-sans-regular, $default-font-stack;
+      font-size: 1.6rem;
+      font-weight: 500;
+
+      a {
+        color: black;
+        text-decoration: none;
+      }
+    }
+
+    .address {
+      margin: 4rem auto 0;
+
+      address {
+        margin: 2rem auto 0;
+
+        li {
+          font-family: $met-sans-regular, $default-font-stack;
+          font-size: 1.6rem;
+          font-weight: 500;
+          font-style: normal;
+          padding: .5rem 0 0 0;
+
+          a {
+            color: black;
+            text-decoration: none;
+          }
+        }
+      }
     }
   }
 }
