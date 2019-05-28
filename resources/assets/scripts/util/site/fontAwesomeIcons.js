@@ -7,6 +7,7 @@ import {
 	faTwitter,
 	faYoutube,
 	faInstagram,
+  faPinterest,
 } from '@fortawesome/free-brands-svg-icons';
 
 import {
@@ -25,6 +26,7 @@ export default {
 			faTwitter,
 			faYoutube,
 			faInstagram,
+      faPinterest,
 			faBars,
 			faSearch,
 			faPlus,
