@@ -15,6 +15,7 @@ import {
 	faPlus,
 	faArrowRight,
 	faArrowLeft,
+  faChevronRight,
 } from '@fortawesome/free-solid-svg-icons';
 
 export default {
@@ -28,7 +29,8 @@ export default {
 			faSearch,
 			faPlus,
 			faArrowRight,
-			faArrowLeft
+			faArrowLeft,
+      faChevronRight
 		);
 
 		// tell FontAwesome to watch the DOM and add the SVGs when it detects icon markup

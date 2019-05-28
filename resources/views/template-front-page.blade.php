@@ -29,4 +29,5 @@
       ])
     </div>
   </section>
+{{--  @include('partials.footer')--}}
 </section>

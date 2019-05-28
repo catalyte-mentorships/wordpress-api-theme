@@ -1,0 +1,37 @@
+.footer {
+  &__newsletter {
+    background: $common-red;
+    padding: 3rem 1rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+      text-align: center;
+      font-size: 2rem;
+      color: white;
+      margin: 1rem auto;
+    }
+  }
+
+  &__newsletter-signup {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    .newsletter-input {
+      padding: 2rem 0;
+      width: 87%;
+      border-right: none;
+    }
+
+    .newsletter-submit {
+      position: absolute;
+      padding: 2rem;
+      right: 1rem;
+      border-left: none;
+    }
+  }
+}
