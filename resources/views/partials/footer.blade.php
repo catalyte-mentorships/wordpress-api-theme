@@ -86,16 +86,16 @@
     <section>
       <div class="footer__font-notes">
         <h3 class="title">
-          <a class="link" href="" target="_blank">Site Index</a>
+          <a class="link" href="https://www.metmuseum.org/information/site-index" target="_blank">Site Index</a>
         </h3>
         <h3 class="title">
-          <a class="link" href="" target="_blank">Terms and Conditions</a>
+          <a class="link" href="https://www.metmuseum.org/information/terms-and-conditions" target="_blank">Terms and Conditions</a>
         </h3>
         <h3 class="title">
-          <a class="link" href="" target="_blank">Privacy Policy</a>
+          <a class="link" href="https://www.metmuseum.org/information/privacy-policy" target="_blank">Privacy Policy</a>
         </h3>
         <h3 class="title">
-          <a class="link" href="" target="_blank">Contact Information</a>
+          <a class="link" href="https://www.metmuseum.org/about-the-met/contact" target="_blank">Contact Information</a>
         </h3>
         <p class="copyright">© 2000–2019 The Metropolitan Museum of Art. All rights reserved.</p>
       </div>
