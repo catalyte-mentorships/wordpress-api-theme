@@ -66,21 +66,23 @@
             </address>
           </div>
         </div>
-        <section>
-          <div class="footer__newsletter--footer">
-            <h3 class="title">Newsletter:</h3>
-            <div class="footer__newsletter-signup">
-              <input
-                id="newsletter-input"
-                class="newsletter-input"
-                type="email"
-                placeholder="Enter your email to sign up for our newsletter."
-              >
-              <button class="newsletter-submit">Sign Up</button>
+        <div class="flex-container">
+          <section>
+            <div class="footer__newsletter--footer">
+              <h3 class="title">Newsletter:</h3>
+              <div class="footer__newsletter-signup">
+                <input
+                  id="newsletter-input"
+                  class="newsletter-input"
+                  type="email"
+                  placeholder="Enter your email to sign up for our newsletter."
+                >
+                <button class="newsletter-submit">Sign Up</button>
+              </div>
             </div>
-          </div>
-        </section>
-        @include('partials.components.social-media')
+          </section>
+          @include('partials.components.social-media')
+        </div>
       </div>
     </section>
     <section>
@@ -97,8 +99,10 @@
         <h3 class="title">
           <a class="link" href="https://www.metmuseum.org/about-the-met/contact" target="_blank">Contact Information</a>
         </h3>
-        <p class="copyright">© 2000–2019 The Metropolitan Museum of Art. All rights reserved.</p>
       </div>
     </section>
+    <div>
+      <p class="copyright">© 2000–2019 The Metropolitan Museum of Art. All rights reserved.</p>
+    </div>
   </div>
 </footer>

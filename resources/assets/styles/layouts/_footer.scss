@@ -12,6 +12,21 @@
       font-size: 2rem;
       color: white;
       margin: 1rem auto;
+
+      @include media-queries('tablet') {
+        font-size: 1.75rem;
+      }
+    }
+  }
+
+  .container {
+    section:nth-child(2) {
+      @include media-queries('tablet') {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        padding: 0 1.5rem;
+        width: 95%;
+        margin: 0 auto;
+      }
     }
   }
 
@@ -21,23 +36,39 @@
     margin: 0 auto;
     padding: 0 1rem;
 
+    @include media-queries('tablet') {
+      width: 50%;
+    }
+
     .newsletter-input {
       padding: 2rem 0;
       width: 87%;
       border-right: none;
+
+      @include media-queries('tablet') {
+        padding: 1rem;
+      }
     }
 
     .newsletter-submit {
       position: absolute;
       padding: 2rem;
-      right: 1rem;
       border-left: none;
+
+      @include media-queries('tablet') {
+        padding: 1rem;
+      }
     }
   }
 
   &__nav {
     margin: 6rem auto 0;
     padding: 0 1.5rem;
+
+    @include media-queries('tablet') {
+      display: flex;
+      justify-content: space-around;
+    }
 
     h3 {
       font-family: $met-sans-semibold, $default-font-stack;
@@ -56,6 +87,11 @@
     h3:last-child {
       border-bottom: 1px solid rgba(0, 0, 0, .5);
       padding: 1rem 1rem 4rem 0;
+
+      @include media-queries('tablet') {
+        border-bottom: none;
+        padding: none;
+      }
     }
   }
 
@@ -64,11 +100,45 @@
 
     section:last-child {
       border-bottom: 1px solid black;
+
+      @include media-queries('tablet') {
+        border-bottom: none;
+      }
+    }
+
+    .flex-container {
+      @include media-queries('tablet') {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 2rem auto;
+      }
+
+      section:first-child {
+        @include media-queries('tablet') {
+          order: 2;
+          margin: 0 auto;
+          width: 50%;
+        }
+      }
+
+      section:last-child {
+        @include media-queries('tablet') {
+          order: 1;
+          margin: 0 auto;
+          width: 50%;
+        }
+      }
     }
   }
 
   &__addresses {
     margin: 4rem auto 0;
+
+    @include media-queries('tablet') {
+      display: flex;
+      margin: 2rem auto;
+    }
 
     h4 {
       font-family: $met-sans-regular, $default-font-stack;
@@ -120,6 +190,13 @@
   &__newsletter--footer {
     margin: 4rem auto 0;
 
+    @include media-queries('tablet') {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      margin: 0 auto;
+    }
+
     .title {
       font-family: $met-sans-regular, $default-font-stack;
       font-size: 1.6rem;
@@ -130,12 +207,24 @@
       margin: 3rem 0 0 0;
       padding: 0;
 
+      @include media-queries('tablet') {
+        width: 100%;
+        margin: 0 auto;
+      }
+
       .newsletter-input {
         padding: 1rem;
+        width: auto;
       }
 
       .newsletter-submit {
         padding: 1rem;
+
+        @include media-queries('tablet') {
+          top: 0;
+          bottom: 0;
+          right: 0;
+        }
       }
     }
   }
@@ -143,6 +232,10 @@
   &__font-notes {
     margin: 4rem auto 0;
     padding: 0 1.5rem;
+
+    @include media-queries('tablet') {
+      display: flex;
+    }
 
     .title {
       margin: 4rem auto 0;
@@ -155,12 +248,16 @@
       color: black;
       text-decoration: none;
     }
+  }
 
-    .copyright {
-      margin: 4rem auto 10rem;
-      font-family: $met-sans-light, $default-font-stack;
-      font-size: 1.25rem;
-      font-weight: 400;
+  .copyright {
+    margin: 4rem auto 10rem;
+    font-family: $met-sans-light, $default-font-stack;
+    font-size: 1.25rem;
+    font-weight: 400;
+
+    @include media-queries('tablet') {
+      text-align: center;
     }
   }
 }
