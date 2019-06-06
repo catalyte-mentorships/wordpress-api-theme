@@ -19,7 +19,7 @@ export default {
     const discoverMoreGlider = window.document.getElementById('js-discover-more-glider');
     const mainContent = window.document.getElementById('js-main-content');
 
-    const videoSrc = heroVideoSourceElm.innerText;
+    const videoSrc = heroVideoSourceElm.innerHTML;
 
     console.log(videoSrc);
 
