@@ -4,9 +4,9 @@
  */
 export default {
   getPostEndpoint: (postType = 'post') => {
-    return `/wp-json/wp/v2/${postType}/?_embed`;
+    return `/wp-json/wp/v2/${postType}?_embed`;
   },
   getPostByCategoryEndpoint: (category) => {
-    return `/wp-json/wp/v2/posts/?categories=${category}&_embed`;
+    return `/wp-json/wp/v2/posts?categories=${category}&_embed`;
   },
 };
