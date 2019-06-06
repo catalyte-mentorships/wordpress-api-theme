@@ -35,10 +35,10 @@
   dependencies:
     "@fortawesome/fontawesome-common-types" "^0.2.17"
 
-"@glidejs/glide@^3.2.7":
-  version "3.2.7"
-  resolved "https://registry.yarnpkg.com/@glidejs/glide/-/glide-3.2.7.tgz#00511dacef58f371d4084d015dc8413bee352a7d"
-  integrity sha512-ufsSwK2gZUg+DePAe77RG9OYEW5scRHVNMimqahSxZu7SvMqAs1SFiB0+gln1BqEnaXXgjgoDhcjwA8eyleXDA==
+"@glidejs/glide@^3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@glidejs/glide/-/glide-3.3.0.tgz#5d0a0cddad863a66272a15826919c64c60351094"
+  integrity sha512-8rs4yGHRlCOvubBM7RyB4sijzl0q5ST7Yvv9frSb8xIRWdztoY7lP/uMMc9GBEM0up5MvxIYWOXig1b5gT/j2A==
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"

@@ -4,7 +4,10 @@
 
 {{--@extends('layouts.app')--}}
 
-@include('partials.front-page.hero')
+@include('partials.front-page.hero', [
+  'hero_video' => $hero_video,
+])
+
 <section>
   <div class="whats-on">
     <h1 class="whats-on__title">What's On</h1>

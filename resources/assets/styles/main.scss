@@ -12,10 +12,10 @@
 // @import '~some-node-module';
 
 // Required Core Stylesheet
-@import "~@glidejs/glide/src/assets/sass/glide.core";
+@import "~@glidejs/glide/dist/css/glide.core.min.css";
 
 // Optional Theme Stylesheet
-@import "~@glidejs/glide/src/assets/sass/glide.theme";
+@import "~@glidejs/glide/dist/css/glide.theme";
 
 /** Import theme styles */
 @import 'common/global';

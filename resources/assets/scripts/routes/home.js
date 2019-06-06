@@ -1,5 +1,5 @@
 // My modules
-import locations from '../util/location';
+// import locations from '../util/location';
 import buildSlides from '../components/buildSlides';
 import buildMainContent from '../components/buildMainContent';
 
@@ -14,10 +14,14 @@ export default {
   finalize() {
     // DOM elements
     const heroVideo = window.document.getElementById('hero__video');
+    const heroVideoSourceElm = window.document.getElementById('hero__video-source');
     const whatsOnGlider = window.document.getElementById('js-whats-on-glider');
     const discoverMoreGlider = window.document.getElementById('js-discover-more-glider');
     const mainContent = window.document.getElementById('js-main-content');
-    const videoSrc = `http://${locations.getHost()}/app/uploads/2019/04/hero_video.mp4`;
+
+    const videoSrc = heroVideoSourceElm.innerText;
+
+    console.log(videoSrc);
 
     /**
      * @description This will check if the screen size is a desktop and play the video
